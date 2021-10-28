@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import { w3cwebsocket as W3CWebSocket } from "websocket";
 
-const client = new W3CWebSocket('ws://127.0.0.1:8000');
+
+//ws://localhost:8000/engine.io/?EIO=3&transport=websocket
+const client = new W3CWebSocket('ws://localhost:8000/engine.io/?EIO=3&transport=websocket');
 
 class App extends Component {
   componentWillMount() {
